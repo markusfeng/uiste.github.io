@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://uiste.github.io/2016/07/11/My-Gallery/</loc>
+    
+    <lastmod>2016-07-12T15:18:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://uiste.github.io/about/index.html</loc>
     
-    <lastmod>2016-07-12T15:14:00.000Z</lastmod>
+    <lastmod>2016-07-12T15:17:44.000Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>http://uiste.github.io/2016/07/10/hello-world/</loc>
     
     <lastmod>2016-07-11T14:45:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://uiste.github.io/2016/07/11/My-Gallery/</loc>
-    
-    <lastmod>2016-07-11T14:06:01.000Z</lastmod>
     
   </url>
   
