@@ -886,6 +886,7 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .site-meta {
+    margin: 0 auto;
     text-align: center;
   }
 }
@@ -1553,7 +1554,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #86525e;
+  background: #cfd185;
 }
 .links-of-blogroll {
   font-size: 13px;
