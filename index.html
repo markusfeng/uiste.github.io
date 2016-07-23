@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="uiste个人博客网站,uiste博客,uiste,Hexo,Next,贾永强,贾永强博客" />
+  <meta name="keywords" content="uiste个人博客网站,uiste博客,uiste,PHP,JavaScript,Hexo,Next" />
 
 
 
@@ -116,7 +116,7 @@
   <link rel="canonical" href="http://uiste.github.io/"/>
 
   <title>
-  uiste个人博客网站,uiste博客,uiste,Hexo,Next,贾永强,贾永强博客 - uiste - 千里之行，始于足下
+  uiste个人博客网站,uiste博客,uiste,PHP,JavaScript,Hexo,Next - uiste - 千里之行，始于足下
 </title>
 </head>
 
@@ -251,6 +251,140 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/07/23/XAMPP-for-MAC-多域名-多站点-多虚拟主机配置/" itemprop="url">
+                  XAMPP for MAC 多域名 多站点 多虚拟主机配置
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-23T11:22:12+08:00" content="2016-07-23">
+              2016-07-23
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/PHP/" itemprop="url" rel="index">
+                    <span itemprop="name">PHP</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/23/XAMPP-for-MAC-多域名-多站点-多虚拟主机配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/23/XAMPP-for-MAC-多域名-多站点-多虚拟主机配置/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>记录用 Mac 配置Xampp，需求是能同时运行多个站点，多个域名，目录自定义</p>
+<h3 id="配置多域名"><a href="#配置多域名" class="headerlink" title="配置多域名"></a>配置多域名</h3><h4 id="编辑hosts文件，目录是-etc-hosts-打开bash操作，因为mac有权限限制，因此需要暂时获取root权限。"><a href="#编辑hosts文件，目录是-etc-hosts-打开bash操作，因为mac有权限限制，因此需要暂时获取root权限。" class="headerlink" title="编辑hosts文件，目录是/etc/hosts,打开bash操作，因为mac有权限限制，因此需要暂时获取root权限。"></a>编辑hosts文件，目录是/etc/hosts,打开bash操作，因为mac有权限限制，因此需要暂时获取root权限。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo nano /etc/hosts</div><div class="line">Password:</div></pre></td></tr></table></figure>
+<h4 id="输入密码，密码不会显示占用的位数，在gnu-nano编辑器中进行修改-按control-X退出，按Y确认"><a href="#输入密码，密码不会显示占用的位数，在gnu-nano编辑器中进行修改-按control-X退出，按Y确认" class="headerlink" title="输入密码，密码不会显示占用的位数，在gnu nano编辑器中进行修改,按control + X退出，按Y确认"></a>输入密码，密码不会显示占用的位数，在gnu nano编辑器中进行修改,按control + X退出，按Y确认</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">  GNU nano 2.0.6              File: /etc/hosts                                  </div><div class="line"></div><div class="line"><span class="comment">##</span></div><div class="line"><span class="comment"># Host Database</span></div><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># localhost is used to configure the loopback interface</span></div><div class="line"><span class="comment"># when the system is booting.  Do not change this entry.</span></div><div class="line"><span class="comment">##</span></div><div class="line">127.0.0.1       localhost</div><div class="line">255.255.255.255 broadcasthost</div><div class="line">::1             localhost</div><div class="line">此处省略n行...</div><div class="line"></div><div class="line">127.0.0.1       www.server.com</div><div class="line"></div><div class="line">^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Page ^K Cut Text  ^C Cur Pos</div><div class="line">^X Exit      ^J Justify   ^W Where Is  ^V Next Page ^U UnCut Text^T To Spell</div></pre></td></tr></table></figure>
+<h3 id="修改xampp的配置文件"><a href="#修改xampp的配置文件" class="headerlink" title="修改xampp的配置文件"></a>修改xampp的配置文件</h3><h4 id="修改httpd-conf文件，目录是-Applications-XAMPP-xamppfiles-etc-httpd-conf-在终端里输入命令如下"><a href="#修改httpd-conf文件，目录是-Applications-XAMPP-xamppfiles-etc-httpd-conf-在终端里输入命令如下" class="headerlink" title="修改httpd.conf文件，目录是/Applications/XAMPP/xamppfiles/etc/httpd.conf,在终端里输入命令如下"></a>修改httpd.conf文件，目录是/Applications/XAMPP/xamppfiles/etc/httpd.conf,在终端里输入命令如下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo nano /Applications/XAMPP/xamppfiles/etc/httpd.conf</div><div class="line">Password:</div></pre></td></tr></table></figure>
+<h4 id="打开httpd-conf文件后，按ctrl＋W搜索-“httpd-vhosts-conf”，去掉前面的-注释符，确保引入了-vhosts-虚拟主机配置文件。"><a href="#打开httpd-conf文件后，按ctrl＋W搜索-“httpd-vhosts-conf”，去掉前面的-注释符，确保引入了-vhosts-虚拟主机配置文件。" class="headerlink" title="打开httpd.conf文件后，按ctrl＋W搜索 “httpd-vhosts.conf”，去掉前面的 # 注释符，确保引入了 vhosts 虚拟主机配置文件。"></a>打开httpd.conf文件后，按ctrl＋W搜索 “httpd-vhosts.conf”，去掉前面的 # 注释符，确保引入了 vhosts 虚拟主机配置文件。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Include etc/extra/httpd-vhosts.conf</div></pre></td></tr></table></figure>
+<h4 id="再在httpd-conf的最后面添加一段以下代码-退出保存"><a href="#再在httpd-conf的最后面添加一段以下代码-退出保存" class="headerlink" title="再在httpd.conf的最后面添加一段以下代码,退出保存"></a>再在httpd.conf的最后面添加一段以下代码,退出保存</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#uiste added by 2016-07-23</div><div class="line">&lt;Directory &quot;/Users/uiste/Sites/project&quot;&gt;</div><div class="line">        #Options Indexes FollowSymLinks ExecCGI Includes #don&apos;t permission see list</div><div class="line">        Options All</div><div class="line">        AllowOverride All</div><div class="line">        Order allow,deny</div><div class="line">        Allow from all</div><div class="line">&lt;/Directory&gt;</div></pre></td></tr></table></figure>
+<h4 id="打开文件httpd-vhosts-conf文件，目录是-Applications-XAMPP-xamppfiles-etc-extra-httpd-vhosts-conf-在终端里输入命令如下："><a href="#打开文件httpd-vhosts-conf文件，目录是-Applications-XAMPP-xamppfiles-etc-extra-httpd-vhosts-conf-在终端里输入命令如下：" class="headerlink" title="打开文件httpd-vhosts.conf文件，目录是/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf,在终端里输入命令如下："></a>打开文件httpd-vhosts.conf文件，目录是/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf,在终端里输入命令如下：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo nano /Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf</div></pre></td></tr></table></figure>
+<p>输入密码后打开httpd-vhosts.conf文件开始编辑<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">    ServerAdmin webmaster@server.com</div><div class="line">    DocumentRoot &quot;/Users/uiste/Sites/project/server/&quot;</div><div class="line">    ServerName www.server.com</div><div class="line">    ErrorLog &quot;logs/dummy-host3.example.com-error_log&quot;</div><div class="line">    CustomLog &quot;logs/dummy-host3.example.com-access_log&quot; common</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure></p>
+<p>编辑完成后，按ctrl＋X退出，按Y保存，重启xampp，浏览器输入127.0.0.1 www.server.com 页面出来会指向不同的站点。</p>
+<h3 id="MySQL配置"><a href="#MySQL配置" class="headerlink" title="MySQL配置"></a>MySQL配置</h3><h4 id="找到config-inc-php文件-路径是-Applications-XAMPP-xamppfiles-phpmyadmin-config-inc-php"><a href="#找到config-inc-php文件-路径是-Applications-XAMPP-xamppfiles-phpmyadmin-config-inc-php" class="headerlink" title="找到config.inc.php文件,路径是/Applications/XAMPP/xamppfiles/phpmyadmin/config.inc.php"></a>找到config.inc.php文件,路径是/Applications/XAMPP/xamppfiles/phpmyadmin/config.inc.php</h4><p>在终端里输入命令如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo nano /Applications/XAMPP/xamppfiles/phpmyadmin/config.inc.php</div></pre></td></tr></table></figure></p>
+<p>打开文件config.inc.php后，找到$cfg[‘Servers’][$i][‘password’] = ‘’，改为$cfg[‘Servers’][$i][‘password’] = ‘123’; 保存退出后，重启xampp即可。</p>
+<h4 id="终端进入mysql命令行操作"><a href="#终端进入mysql命令行操作" class="headerlink" title="终端进入mysql命令行操作"></a>终端进入mysql命令行操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ /Applications/XAMPP/xamppfiles/bin/mysql</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -864,6 +998,7 @@
             <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div><div class="line">$ hexo new post &lt;title&gt;</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Set-the-Directory"><a href="#Set-the-Directory" class="headerlink" title="Set the Directory"></a>Set the Directory</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">tags:</div><div class="line">- 标签</div><div class="line">categories:</div><div class="line">- 分类</div></pre></td></tr></table></figure>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
@@ -939,7 +1074,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -947,7 +1082,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -956,7 +1091,7 @@
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
