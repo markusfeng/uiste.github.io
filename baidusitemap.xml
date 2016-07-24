@@ -3,6 +3,50 @@
 
     
   <url>
+    <loc>http://uiste.github.io/2016/07/24/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2016-07-24T14:49:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL数据库基本操作</title>
+        <pubTime>2016-07-24T13:01:20.000Z</pubTime>
+        
+        <tag>MySQL </tag>
+         
+        <tag>PHP </tag>
+         
+         
+           
+             
+              <breadCrumb title="PHP" url="http://uiste.github.io/categories/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://uiste.github.io/2016/07/20/%E6%B6%88%E6%B6%88%E4%B9%90%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2016-07-24T14:36:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>消消乐小游戏</title>
+        <pubTime>2016-07-20T15:40:01.000Z</pubTime>
+        
+        <tag>游戏 </tag>
+         
+        <tag>JavaScript </tag>
+         
+         
+           
+             
+              <breadCrumb title="代码" url="http://uiste.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://uiste.github.io/2016/07/10/hello-world/</loc>
     <lastmod>2016-07-24T14:35:22.000Z</lastmod>
     <data>
@@ -45,50 +89,6 @@
 
     
   <url>
-    <loc>http://uiste.github.io/2016/07/20/%E6%B6%88%E6%B6%88%E4%B9%90%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2016-07-24T14:29:24.000Z</lastmod>
-    <data>
-        <display>
-        <title>消消乐小游戏</title>
-        <pubTime>2016-07-20T15:40:01.000Z</pubTime>
-        
-        <tag>游戏 </tag>
-         
-        <tag>JavaScript </tag>
-         
-         
-           
-             
-              <breadCrumb title="代码" url="http://uiste.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://uiste.github.io/2016/07/24/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
-    <lastmod>2016-07-24T14:27:25.000Z</lastmod>
-    <data>
-        <display>
-        <title>MySQL数据库基本操作</title>
-        <pubTime>2016-07-24T13:01:20.000Z</pubTime>
-        
-        <tag>PHP </tag>
-         
-        <tag>MySQL </tag>
-         
-         
-           
-             
-              <breadCrumb title="PHP" url="http://uiste.github.io/categories/PHP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://uiste.github.io/2016/07/24/hexo%E5%88%86%E7%B1%BB%E5%92%8C%E8%A1%A8%E7%AD%BE%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA/</loc>
     <lastmod>2016-07-24T14:23:11.000Z</lastmod>
     <data>
@@ -118,9 +118,9 @@
         <title>MySQL ERROR 1044 (42000)</title>
         <pubTime>2016-07-24T07:59:09.000Z</pubTime>
         
-        <tag>PHP </tag>
-         
         <tag>MySQL </tag>
+         
+        <tag>PHP </tag>
          
          
            
@@ -140,11 +140,11 @@
         <title>XAMPP for MAC 多域名 多站点 多虚拟主机配置</title>
         <pubTime>2016-07-23T03:22:12.000Z</pubTime>
         
-        <tag>XAMPP </tag>
+        <tag>MySQL </tag>
          
         <tag>PHP </tag>
          
-        <tag>MySQL </tag>
+        <tag>XAMPP </tag>
          
          
            
