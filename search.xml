@@ -6,10 +6,7 @@
     <entry>
       <title><![CDATA[MySQL ERROR 1044 (42000)]]></title>
       <url>http://uiste.github.io/2016/07/24/mysql-ERROR-1044-42000/</url>
-      <content type="html"><![CDATA[<blockquote>
-<p>mysql ERROR 1044 (42000): Access denied for user ‘’@’localhost’ to database<br>问题解决</p>
-</blockquote>
-<h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><blockquote>
+      <content type="html"><![CDATA[<h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><blockquote>
 <p>在MySQL控制台下创建数据库出现以下信息：<br>mysql&gt; CREATE DATABASE uiste;<br>ERROR 1044 (42000): Access denied for user ‘’@’localhost’ to database ‘uiste’</p>
 </blockquote>
 <h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>执行以下命令进入控制台：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">mysql --user=root -p</div><div class="line">输入root用户的密码即可进入mysql控制台：</div><div class="line">创建数据库：</div><div class="line">create database uiste;</div><div class="line">显示所有数据库：</div><div class="line">show databases;</div></pre></td></tr></table></figure></p>
