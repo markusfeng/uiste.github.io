@@ -3,8 +3,33 @@
 
     
   <url>
+    <loc>http://uiste.github.io/2016/07/24/mysql-ERROR-1044-42000/</loc>
+    <lastmod>2016-07-24T08:04:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>mysql ERROR 1044 (42000)</title>
+        <pubTime>2016-07-24T07:59:09.000Z</pubTime>
+        
+        <tag>PHP </tag>
+         
+        <tag>MySQL </tag>
+         
+         
+           
+             
+              <breadCrumb title="PHP" url="http://uiste.github.io/categories/PHP/"/>
+          
+             
+              <breadCrumb title="MySQL" url="http://uiste.github.io/categories/PHP/MySQL/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://uiste.github.io/2016/07/23/XAMPP-for-MAC-%E5%A4%9A%E5%9F%9F%E5%90%8D-%E5%A4%9A%E7%AB%99%E7%82%B9-%E5%A4%9A%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2016-07-24T07:46:55.000Z</lastmod>
+    <lastmod>2016-07-24T07:59:53.000Z</lastmod>
     <data>
         <display>
         <title>XAMPP for MAC 多域名 多站点 多虚拟主机配置</title>
@@ -13,6 +38,8 @@
         <tag>XAMPP </tag>
          
         <tag>PHP </tag>
+         
+        <tag>MySQL </tag>
          
          
            
