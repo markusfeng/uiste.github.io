@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://uiste.github.io/"/>
-  <updated>2016-07-26T13:38:03.000Z</updated>
+  <updated>2016-07-26T11:21:57.000Z</updated>
   <id>http://uiste.github.io/</id>
   
   <author>
@@ -14,20 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>8</title>
-    <link href="http://uiste.github.io/source/8.html"/>
-    <id>http://uiste.github.io/source/8.html</id>
-    <published>2016-07-26T13:38:03.000Z</published>
-    <updated>2016-07-26T13:38:03.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>hexo分类和标签无法显示</title>
@@ -111,9 +97,9 @@
       <category term="PHP" scheme="http://uiste.github.io/categories/PHP/"/>
     
     
-      <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
-    
       <category term="MySQL" scheme="http://uiste.github.io/tags/MySQL/"/>
+    
+      <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
     
   </entry>
   
@@ -140,9 +126,9 @@
       <category term="PHP" scheme="http://uiste.github.io/categories/PHP/"/>
     
     
-      <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
-    
       <category term="MySQL" scheme="http://uiste.github.io/tags/MySQL/"/>
+    
+      <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
     
   </entry>
   
@@ -186,11 +172,11 @@
       <category term="PHP" scheme="http://uiste.github.io/categories/PHP/"/>
     
     
-      <category term="XAMPP" scheme="http://uiste.github.io/tags/XAMPP/"/>
+      <category term="MySQL" scheme="http://uiste.github.io/tags/MySQL/"/>
     
       <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
     
-      <category term="MySQL" scheme="http://uiste.github.io/tags/MySQL/"/>
+      <category term="XAMPP" scheme="http://uiste.github.io/tags/XAMPP/"/>
     
   </entry>
   
