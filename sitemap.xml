@@ -1,81 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
+    
   <url>
     <loc>http://uiste.github.io/2016/07/24/hexo%E5%88%86%E7%B1%BB%E5%92%8C%E8%A1%A8%E7%AD%BE%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA/</loc>
+    <lastmod>2016-07-26T11:20:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>hexo分类和标签无法显示世纪东方了</title>
+        <pubTime>2016-07-24T14:13:33.000Z</pubTime>
+        
+        <tag>hexo </tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://uiste.github.io/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
-    <lastmod>2016-07-24T16:24:31.000Z</lastmod>
-    
-  </url>
-  
   <url>
     <loc>http://uiste.github.io/2016/07/24/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
-    
     <lastmod>2016-07-24T14:49:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL数据库基本操作</title>
+        <pubTime>2016-07-24T13:01:20.000Z</pubTime>
+        
+        <tag>MySQL </tag>
+         
+        <tag>PHP </tag>
+         
+         
+           
+             
+              <breadCrumb title="PHP" url="http://uiste.github.io/categories/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://uiste.github.io/2016/07/20/%E6%B6%88%E6%B6%88%E4%B9%90%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
-    
     <lastmod>2016-07-24T14:36:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>消消乐小游戏</title>
+        <pubTime>2016-07-20T15:40:01.000Z</pubTime>
+        
+        <tag>游戏 </tag>
+         
+        <tag>JavaScript </tag>
+         
+         
+           
+             
+              <breadCrumb title="代码" url="http://uiste.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://uiste.github.io/2016/07/10/hello-world/</loc>
-    
     <lastmod>2016-07-24T14:35:22.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-07-10T14:10:08.000Z</pubTime>
+        
+        <tag>hexo </tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://uiste.github.io/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://uiste.github.io/2016/07/10/first-article/</loc>
-    
     <lastmod>2016-07-24T14:32:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>Cmd Markdown 简明语法手册</title>
+        <pubTime>2016-07-10T15:55:13.000Z</pubTime>
+        
+        <tag>hexo </tag>
+         
+        <tag>Markdown </tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="http://uiste.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
-  <url>
-    <loc>http://uiste.github.io/categories/index.html</loc>
     
-    <lastmod>2016-07-24T14:01:31.000Z</lastmod>
     
-  </url>
-  
-  <url>
-    <loc>http://uiste.github.io/tags/index.html</loc>
-    
-    <lastmod>2016-07-24T14:00:56.000Z</lastmod>
-    
-  </url>
-  
   <url>
     <loc>http://uiste.github.io/2016/07/24/mysql-ERROR-1044-42000/</loc>
-    
     <lastmod>2016-07-24T08:06:39.000Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL ERROR 1044 (42000)</title>
+        <pubTime>2016-07-24T07:59:09.000Z</pubTime>
+        
+        <tag>MySQL </tag>
+         
+        <tag>PHP </tag>
+         
+         
+           
+             
+              <breadCrumb title="PHP" url="http://uiste.github.io/categories/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://uiste.github.io/2016/07/23/XAMPP-for-MAC-%E5%A4%9A%E5%9F%9F%E5%90%8D-%E5%A4%9A%E7%AB%99%E7%82%B9-%E5%A4%9A%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E9%85%8D%E7%BD%AE/</loc>
-    
     <lastmod>2016-07-24T07:59:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>XAMPP for MAC 多域名 多站点 多虚拟主机配置</title>
+        <pubTime>2016-07-23T03:22:12.000Z</pubTime>
+        
+        <tag>MySQL </tag>
+         
+        <tag>PHP </tag>
+         
+        <tag>XAMPP </tag>
+         
+         
+           
+             
+              <breadCrumb title="PHP" url="http://uiste.github.io/categories/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
-  <url>
-    <loc>http://uiste.github.io/about/index.html</loc>
     
-    <lastmod>2016-07-12T15:17:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://uiste.github.io/404/index.html</loc>
-    
-    <lastmod>2015-03-25T11:53:16.000Z</lastmod>
-    
-  </url>
-  
 </urlset>
