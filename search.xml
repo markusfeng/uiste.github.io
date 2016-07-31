@@ -11,7 +11,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[CSS万用清零]]></title>
+      <title><![CDATA[CSS默认样式表]]></title>
       <url>http://uiste.github.io/source/20160730-1.html</url>
       <content type="html"><![CDATA[<p>网页设计，让人最头疼的莫过于让页面兼容各大浏览器，准确些是兼容它们“默认”的CSS样式表。</p>
 <h4 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h4><h5 id="第一种方式"><a href="#第一种方式" class="headerlink" title="第一种方式"></a>第一种方式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">* &#123;margin:0px; padding:0px;&#125;</div></pre></td></tr></table></figure>
