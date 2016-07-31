@@ -492,10 +492,12 @@
 
       
         
-          
-            <h5 id="在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如："><a href="#在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如：" class="headerlink" title="在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如："></a>在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">jQuery(&quot;#nav li&quot;).hover(function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).slideDown(&quot;slow&quot;);</div><div class="line">&#125;,function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).slideUp(&quot;fast&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h5 id="度娘找到相关的解决方法，增加filter过滤到正在执行的动画模块即可，修正后的代码如下："><a href="#度娘找到相关的解决方法，增加filter过滤到正在执行的动画模块即可，修正后的代码如下：" class="headerlink" title="度娘找到相关的解决方法，增加filter过滤到正在执行的动画模块即可，修正后的代码如下："></a>度娘找到相关的解决方法，增加filter过滤到正在执行的动画模块即可，修正后的代码如下：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">jQuery(&quot;#nav li&quot;).hover(function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).filter(&apos;:not(:animated)&apos;).slideDown(&quot;slow&quot;);</div><div class="line">&#125;,function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).slideUp(&quot;fast&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-          
+          <h5 id="在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如："><a href="#在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如：" class="headerlink" title="在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如："></a>在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">jQuery(&quot;#nav li&quot;).hover(function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).slideDown(&quot;slow&quot;);</div><div class="line">&#125;,function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).slideUp(&quot;fast&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/source/20160731-1.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -616,7 +618,9 @@
           <p>网页设计，让人最头疼的莫过于让页面兼容各大浏览器，准确些是兼容它们“默认”的CSS样式表。</p>
 <h4 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h4><h5 id="第一种方式"><a href="#第一种方式" class="headerlink" title="第一种方式"></a>第一种方式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">* &#123;margin:0px; padding:0px;&#125;</div></pre></td></tr></table></figure>
 <blockquote>
-<p>这行代码虽然简单，但却让网页解析太慢。<br>于是出现了几种CSS重置方法：<br>
+<p>这行代码虽然简单，但却让网页解析太慢。<br>于是出现了几种CSS重置方法：</p>
+</blockquote>
+<h5 id="第二种方式"><a href="#第二种方式" class="headerlink" title="第二种方式"></a>第二种方式</h5>
           <div class="post-more-link text-center">
             <a class="btn" href="/source/20160730-1.html#more" rel="contents">
               阅读全文 &raquo;
@@ -739,15 +743,14 @@
 
       
         
-          
-            <p>hexo 下的分类和标签无法显示，解决方法</p>
+          <p>hexo 下的分类和标签无法显示，解决方法</p>
 <h2 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h2><p>新建一个页面，命名为 tags 。命令如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page &quot;tags&quot;</div></pre></td></tr></table></figure></p>
-<h2 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h2><p>编辑刚刚新建的页面，将页面的类型设置为tags，主题将自动为这个页面显示标签云。页面内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">title: Tagcloud</div><div class="line">date: 2014-12-22 12:39:04</div><div class="line">type: &quot;tags&quot;</div><div class="line">---</div><div class="line">&lt;!-- more --&gt;</div></pre></td></tr></table></figure></p>
-<p>注意：如果有启用多说 或者 Disqus 评论，默认页面也会带有评论。需要关闭的话，请添加字段 comments 并将值设置为 false，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">title: Tagcloud</div><div class="line">date: 2016-7-24 22:21:13</div><div class="line">type: &quot;tags&quot;</div><div class="line">comment: false</div><div class="line">---</div></pre></td></tr></table></figure></p>
-<h2 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h2><p>在菜单中添加链接。编辑 主题配置文件 ，添加 tags 到 menu 中，如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  categories: /categories</div><div class="line">  about: /about</div><div class="line">  archives: /archives</div><div class="line">  tags: /tags</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure></p>
-<p><strong>分类的解决方法同标签</strong></p>
-
-          
+<h2 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h2><p>编辑刚刚新建的页面，将页面的类型设置为tags，主题将自动为这个页面显示标签云。页面内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: Tagcloud</div><div class="line">date: 2014-12-22 12:39:04</div><div class="line">type: &quot;tags&quot;</div><div class="line">---</div></pre></td></tr></table></figure></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/source/20160724-7.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -867,6 +870,7 @@
         
           <h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><h4 id="连接数据库："><a href="#连接数据库：" class="headerlink" title="连接数据库："></a>连接数据库：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/Applications/XAMPP/xamppfiles/bin/mysql -uroot -p123456</div></pre></td></tr></table></figure>
 <h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mysql&gt; create database uiste charset=utf8;</div><div class="line">Query OK, 1 row affected (0.01 sec)</div></pre></td></tr></table></figure>
+<h4 id="选择数据库"><a href="#选择数据库" class="headerlink" title="选择数据库"></a>选择数据库</h4>
           <div class="post-more-link text-center">
             <a class="btn" href="/source/20160724-6.html#more" rel="contents">
               阅读全文 &raquo;

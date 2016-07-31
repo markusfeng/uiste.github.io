@@ -92,7 +92,7 @@
 <meta property="og:url" content="http://uiste.github.io/source/20160731-1.html">
 <meta property="og:site_name" content="uiste">
 <meta property="og:description" content="在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如：12345jQuery(&amp;quot;#nav li&amp;quot;).hover(function()&amp;#123;    $(this).find(&amp;quot;ul:first&amp;quot;).slideDown(&amp;quot;slow&amp;quot;);&amp;#125;,function()&amp;#123;    $(this">
-<meta property="og:updated_time" content="2016-07-31T14:52:37.000Z">
+<meta property="og:updated_time" content="2016-07-31T16:13:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery中hover连续触发动画的bug">
 <meta name="twitter:description" content="在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如：12345jQuery(&amp;quot;#nav li&amp;quot;).hover(function()&amp;#123;    $(this).find(&amp;quot;ul:first&amp;quot;).slideDown(&amp;quot;slow&amp;quot;);&amp;#125;,function()&amp;#123;    $(this">
@@ -365,6 +365,7 @@
 
       
         <h5 id="在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如："><a href="#在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如：" class="headerlink" title="在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如："></a>在用jQuery实现下拉菜单特效时，发现鼠标连续触碰对象会导致hover事件反复发生，如：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">jQuery(&quot;#nav li&quot;).hover(function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).slideDown(&quot;slow&quot;);</div><div class="line">&#125;,function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).slideUp(&quot;fast&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h5 id="度娘找到相关的解决方法，增加filter过滤到正在执行的动画模块即可，修正后的代码如下："><a href="#度娘找到相关的解决方法，增加filter过滤到正在执行的动画模块即可，修正后的代码如下：" class="headerlink" title="度娘找到相关的解决方法，增加filter过滤到正在执行的动画模块即可，修正后的代码如下："></a>度娘找到相关的解决方法，增加filter过滤到正在执行的动画模块即可，修正后的代码如下：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">jQuery(&quot;#nav li&quot;).hover(function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).filter(&apos;:not(:animated)&apos;).slideDown(&quot;slow&quot;);</div><div class="line">&#125;,function()&#123;</div><div class="line">    $(this).find(&quot;ul:first&quot;).slideUp(&quot;fast&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
       
     </div>

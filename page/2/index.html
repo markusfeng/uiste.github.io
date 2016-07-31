@@ -357,13 +357,15 @@
 
       
         
-          
-            <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><blockquote>
+          <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><blockquote>
 <p>在MySQL控制台下创建数据库出现以下信息：<br>mysql&gt; CREATE DATABASE uiste;<br>ERROR 1044 (42000): Access denied for user ‘’@’localhost’ to database ‘uiste’</p>
 </blockquote>
-<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>执行以下命令进入控制台：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">mysql --user=root -p</div><div class="line">输入root用户的密码即可进入mysql控制台：</div><div class="line">创建数据库：</div><div class="line">create database uiste;</div><div class="line">显示所有数据库：</div><div class="line">show databases;</div></pre></td></tr></table></figure></p>
-
-          
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>执行以下命令进入控制台：</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/source/20160724-5.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -481,30 +483,14 @@
 
       
         
-          
-            <p>记录用 Mac 配置Xampp，需求是能同时运行多个站点，多个域名，目录自定义</p>
+          <p>记录用 Mac 配置Xampp，需求是能同时运行多个站点，多个域名，目录自定义</p>
 <h3 id="配置多域名"><a href="#配置多域名" class="headerlink" title="配置多域名"></a>配置多域名</h3><h4 id="编辑hosts文件，目录是-etc-hosts-打开bash操作，因为mac有权限限制，因此需要暂时获取root权限。"><a href="#编辑hosts文件，目录是-etc-hosts-打开bash操作，因为mac有权限限制，因此需要暂时获取root权限。" class="headerlink" title="编辑hosts文件，目录是/etc/hosts,打开bash操作，因为mac有权限限制，因此需要暂时获取root权限。"></a>编辑hosts文件，目录是/etc/hosts,打开bash操作，因为mac有权限限制，因此需要暂时获取root权限。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo nano /etc/hosts</div><div class="line">Password:</div></pre></td></tr></table></figure>
-<h4 id="输入密码，密码不会显示占用的位数，在gnu-nano编辑器中进行修改-按control-X退出，按Y确认"><a href="#输入密码，密码不会显示占用的位数，在gnu-nano编辑器中进行修改-按control-X退出，按Y确认" class="headerlink" title="输入密码，密码不会显示占用的位数，在gnu nano编辑器中进行修改,按control + X退出，按Y确认"></a>输入密码，密码不会显示占用的位数，在gnu nano编辑器中进行修改,按control + X退出，按Y确认</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">  GNU nano 2.0.6              File: /etc/hosts                                  </div><div class="line">&lt;!-- more --&gt;</div><div class="line"><span class="comment">##</span></div><div class="line"><span class="comment"># Host Database</span></div><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># localhost is used to configure the loopback interface</span></div><div class="line"><span class="comment"># when the system is booting.  Do not change this entry.</span></div><div class="line"><span class="comment">##</span></div><div class="line">127.0.0.1       localhost</div><div class="line">255.255.255.255 broadcasthost</div><div class="line">::1             localhost</div><div class="line">此处省略n行...</div><div class="line"></div><div class="line">127.0.0.1       www.server.com</div><div class="line"></div><div class="line">^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Page ^K Cut Text  ^C Cur Pos</div><div class="line">^X Exit      ^J Justify   ^W Where Is  ^V Next Page ^U UnCut Text^T To Spell</div></pre></td></tr></table></figure>
-<h3 id="修改xampp的配置文件"><a href="#修改xampp的配置文件" class="headerlink" title="修改xampp的配置文件"></a>修改xampp的配置文件</h3><h4 id="修改httpd-conf文件，目录是-Applications-XAMPP-xamppfiles-etc-httpd-conf-在终端里输入命令如下"><a href="#修改httpd-conf文件，目录是-Applications-XAMPP-xamppfiles-etc-httpd-conf-在终端里输入命令如下" class="headerlink" title="修改httpd.conf文件，目录是/Applications/XAMPP/xamppfiles/etc/httpd.conf,在终端里输入命令如下"></a>修改httpd.conf文件，目录是/Applications/XAMPP/xamppfiles/etc/httpd.conf,在终端里输入命令如下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo nano /Applications/XAMPP/xamppfiles/etc/httpd.conf</div><div class="line">Password:</div></pre></td></tr></table></figure>
-<h4 id="打开httpd-conf文件后，按ctrl＋W搜索-“httpd-vhosts-conf”，去掉前面的-注释符，确保引入了-vhosts-虚拟主机配置文件。"><a href="#打开httpd-conf文件后，按ctrl＋W搜索-“httpd-vhosts-conf”，去掉前面的-注释符，确保引入了-vhosts-虚拟主机配置文件。" class="headerlink" title="打开httpd.conf文件后，按ctrl＋W搜索 “httpd-vhosts.conf”，去掉前面的 # 注释符，确保引入了 vhosts 虚拟主机配置文件。"></a>打开httpd.conf文件后，按ctrl＋W搜索 “httpd-vhosts.conf”，去掉前面的 # 注释符，确保引入了 vhosts 虚拟主机配置文件。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Include etc/extra/httpd-vhosts.conf</div></pre></td></tr></table></figure>
-<h4 id="再在httpd-conf的最后面添加一段以下代码-退出保存"><a href="#再在httpd-conf的最后面添加一段以下代码-退出保存" class="headerlink" title="再在httpd.conf的最后面添加一段以下代码,退出保存"></a>再在httpd.conf的最后面添加一段以下代码,退出保存</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#uiste added by 2016-07-23</div><div class="line">&lt;Directory &quot;/Users/uiste/Sites/project&quot;&gt;</div><div class="line">        #Options Indexes FollowSymLinks ExecCGI Includes #don&apos;t permission see list</div><div class="line">        Options All</div><div class="line">        AllowOverride All</div><div class="line">        Order allow,deny</div><div class="line">        Allow from all</div><div class="line">&lt;/Directory&gt;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>方法一：如果出现<strong>Access forbidden!</strong>注意前面已经进行设置是否冲突，或者尝试对站点文件夹进行权限设置<br>chmod -R 777 /Users/uiste/Sites/project<br>方法二：解决办法是禁用deny from all<br>sudo nano /Applications/XAMPP/xamppfiles/etc/extra/httpd-xampp.conf</p>
-</blockquote>
-<h4 id="打开文件httpd-vhosts-conf文件，目录是-Applications-XAMPP-xamppfiles-etc-extra-httpd-vhosts-conf-在终端里输入命令如下："><a href="#打开文件httpd-vhosts-conf文件，目录是-Applications-XAMPP-xamppfiles-etc-extra-httpd-vhosts-conf-在终端里输入命令如下：" class="headerlink" title="打开文件httpd-vhosts.conf文件，目录是/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf,在终端里输入命令如下："></a>打开文件httpd-vhosts.conf文件，目录是/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf,在终端里输入命令如下：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo nano /Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf</div></pre></td></tr></table></figure>
-<p>输入密码后打开httpd-vhosts.conf文件开始编辑<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">    ServerAdmin webmaster@server.com</div><div class="line">    DocumentRoot &quot;/Users/uiste/Sites/project/server/&quot;</div><div class="line">    ServerName www.server.com</div><div class="line">    ErrorLog &quot;logs/dummy-host3.example.com-error_log&quot;</div><div class="line">    CustomLog &quot;logs/dummy-host3.example.com-access_log&quot; common</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure></p>
-<p>编辑完成后，按ctrl＋X退出，按Y保存，重启xampp，浏览器输入127.0.0.1 www.server.com 页面出来会指向不同的站点。</p>
-<h3 id="MySQL配置"><a href="#MySQL配置" class="headerlink" title="MySQL配置"></a>MySQL配置</h3><h4 id="利用phpMyadmin修改MySQL数据库密码"><a href="#利用phpMyadmin修改MySQL数据库密码" class="headerlink" title="利用phpMyadmin修改MySQL数据库密码"></a>利用phpMyadmin修改MySQL数据库密码</h4><p><img src="http://7xwlfk.com1.z0.glb.clouddn.com/phpMyadmin_password.png" alt="phpMyadmin_password"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">update user set password=password(&apos;123456&apos;) where User=&apos;root&apos;</div></pre></td></tr></table></figure></p>
-<p><img src="http://7xwlfk.com1.z0.glb.clouddn.com/config.ini.php.png" alt="phpMyadmin_password"></p>
-<h4 id="找到config-inc-php文件-路径是-Applications-XAMPP-xamppfiles-phpmyadmin-config-inc-php"><a href="#找到config-inc-php文件-路径是-Applications-XAMPP-xamppfiles-phpmyadmin-config-inc-php" class="headerlink" title="找到config.inc.php文件,路径是/Applications/XAMPP/xamppfiles/phpmyadmin/config.inc.php"></a>找到config.inc.php文件,路径是/Applications/XAMPP/xamppfiles/phpmyadmin/config.inc.php</h4><p>在终端里输入命令如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo nano /Applications/XAMPP/xamppfiles/phpmyadmin/config.inc.php</div></pre></td></tr></table></figure></p>
-<p>打开文件config.inc.php后，找到$cfg[‘Servers’][$i][‘password’] = ‘’，改为$cfg[‘Servers’][$i][‘password’] = ‘123’; 保存退出后，重启xampp即可。</p>
-<h4 id="终端进入mysql命令行操作"><a href="#终端进入mysql命令行操作" class="headerlink" title="终端进入mysql命令行操作"></a>终端进入mysql命令行操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ /Applications/XAMPP/xamppfiles/bin/mysql</div></pre></td></tr></table></figure>
-<hr>
-<h3 id="可视化文件配置方法"><a href="#可视化文件配置方法" class="headerlink" title="可视化文件配置方法"></a>可视化文件配置方法</h3><h4 id="开启虚拟主机配置"><a href="#开启虚拟主机配置" class="headerlink" title="开启虚拟主机配置"></a>开启虚拟主机配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">文件：/Applications/XAMPP/xamppfiles/etc/httpd.conf</div><div class="line">配置： httpd-vhosts.conf</div><div class="line">    #取消#号开启虚拟主机</div><div class="line">    Include conf/extra/httpd-vhosts.conf</div></pre></td></tr></table></figure>
-<h4 id="设置站点文件及访问权限"><a href="#设置站点文件及访问权限" class="headerlink" title="设置站点文件及访问权限"></a>设置站点文件及访问权限</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">文件：httpd-vhosts.conf</div><div class="line">配置：</div><div class="line">    &lt;VirtualHost *:80&gt;</div><div class="line">        ServerAdmin www.test.com</div><div class="line">        DocumentRoot &quot;/Users/uiste/www&quot;</div><div class="line">        ServerName www.test.com</div><div class="line">        #开启访问权限</div><div class="line">        &lt;Directory &quot;/Users/uiste/www&quot;&gt;         </div><div class="line">        Allow from all</div><div class="line">        &lt;/Directory&gt;</div><div class="line">    &lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
-<h4 id="DNS解析"><a href="#DNS解析" class="headerlink" title="DNS解析"></a>DNS解析</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">文件：etc/hosts</div><div class="line">127.0.0.1   www.test.com</div></pre></td></tr></table></figure>
-
-          
+<h4 id="输入密码，密码不会显示占用的位数，在gnu-nano编辑器中进行修改-按control-X退出，按Y确认"><a href="#输入密码，密码不会显示占用的位数，在gnu-nano编辑器中进行修改-按control-X退出，按Y确认" class="headerlink" title="输入密码，密码不会显示占用的位数，在gnu nano编辑器中进行修改,按control + X退出，按Y确认"></a>输入密码，密码不会显示占用的位数，在gnu nano编辑器中进行修改,按control + X退出，按Y确认</h4>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/source/20160723-4.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -634,8 +620,7 @@
 <li>游戏血条显示，设定结束关卡为10个星星</li>
 </ul>
 </blockquote>
-<p><img src="http://7xwlfk.com1.z0.glb.clouddn.com/game.png" alt="cmd-markdown-logo"></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://7xwlfk.com1.z0.glb.clouddn.com/game.png" alt="cmd-markdown-logo"></h2>
           <div class="post-more-link text-center">
             <a class="btn" href="/source/20160720-2.html#more" rel="contents">
               阅读全文 &raquo;
@@ -765,7 +750,7 @@
 <p>示例：</p>
 <p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
 <h3 id="2-分级标题"><a href="#2-分级标题" class="headerlink" title="2. 分级标题"></a>2. 分级标题</h3><p>使用 === 表示一级标题，使用 — 表示二级标题。</p>
-<p>示例：<br>
+<p>示例：</p>
           <div class="post-more-link text-center">
             <a class="btn" href="/source/20160710-3.html#more" rel="contents">
               阅读全文 &raquo;
