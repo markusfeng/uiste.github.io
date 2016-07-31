@@ -87,21 +87,18 @@
 
 
 <meta name="description" content="数据库操作连接数据库：1/Applications/XAMPP/xamppfiles/bin/mysql -uroot -p123456
-创建数据库12mysql&amp;gt; create database uiste charset=utf8;Query OK, 1 row affected (0.01 sec)
-选择数据库12mysql&amp;gt; use uiste;Database changed">
+创建数据库12mysql&amp;gt; create database uiste charset=utf8;Query OK, 1 row affected (0.01 sec)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL数据库基本操作">
 <meta property="og:url" content="http://uiste.github.io/source/20160724-6.html">
 <meta property="og:site_name" content="uiste">
 <meta property="og:description" content="数据库操作连接数据库：1/Applications/XAMPP/xamppfiles/bin/mysql -uroot -p123456
-创建数据库12mysql&amp;gt; create database uiste charset=utf8;Query OK, 1 row affected (0.01 sec)
-选择数据库12mysql&amp;gt; use uiste;Database changed">
-<meta property="og:updated_time" content="2016-07-26T15:20:35.000Z">
+创建数据库12mysql&amp;gt; create database uiste charset=utf8;Query OK, 1 row affected (0.01 sec)">
+<meta property="og:updated_time" content="2016-07-31T16:10:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL数据库基本操作">
 <meta name="twitter:description" content="数据库操作连接数据库：1/Applications/XAMPP/xamppfiles/bin/mysql -uroot -p123456
-创建数据库12mysql&amp;gt; create database uiste charset=utf8;Query OK, 1 row affected (0.01 sec)
-选择数据库12mysql&amp;gt; use uiste;Database changed">
+创建数据库12mysql&amp;gt; create database uiste charset=utf8;Query OK, 1 row affected (0.01 sec)">
 
 
 
@@ -360,6 +357,7 @@
       
         <h3 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h3><h4 id="连接数据库："><a href="#连接数据库：" class="headerlink" title="连接数据库："></a>连接数据库：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/Applications/XAMPP/xamppfiles/bin/mysql -uroot -p123456</div></pre></td></tr></table></figure>
 <h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mysql&gt; create database uiste charset=utf8;</div><div class="line">Query OK, 1 row affected (0.01 sec)</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h4 id="选择数据库"><a href="#选择数据库" class="headerlink" title="选择数据库"></a>选择数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mysql&gt; use uiste;</div><div class="line">Database changed</div></pre></td></tr></table></figure>
 <h4 id="创建数据表"><a href="#创建数据表" class="headerlink" title="创建数据表"></a>创建数据表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">mysql&gt; create table uiste_stu(</div><div class="line">    -&gt;      id int not null auto_increment primary key,</div><div class="line">    -&gt;      name char(10) not null,</div><div class="line">    -&gt;      sex char(1) not null default &apos;男&apos;,</div><div class="line">    -&gt;      age tinyint not null,</div><div class="line">    -&gt;      score decimal(3,1)</div><div class="line">    -&gt;      );</div><div class="line">Query OK, 0 rows affected (0.02 sec)</div></pre></td></tr></table></figure>
 <h4 id="查看所有表："><a href="#查看所有表：" class="headerlink" title="查看所有表："></a>查看所有表：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">mysql&gt; show tables;</div><div class="line">+-----------------+</div><div class="line">| Tables_in_uiste |</div><div class="line">+-----------------+</div><div class="line">| uiste_stu       |</div><div class="line">+-----------------+</div><div class="line">1 row in set (0.00 sec)</div></pre></td></tr></table></figure>
