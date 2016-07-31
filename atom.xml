@@ -197,9 +197,9 @@
       <category term="PHP" scheme="http://uiste.github.io/categories/PHP/"/>
     
     
-      <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
-    
       <category term="MySQL" scheme="http://uiste.github.io/tags/MySQL/"/>
+    
+      <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
     
   </entry>
   
@@ -226,9 +226,9 @@
       <category term="PHP" scheme="http://uiste.github.io/categories/PHP/"/>
     
     
-      <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
-    
       <category term="MySQL" scheme="http://uiste.github.io/tags/MySQL/"/>
+    
+      <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
     
   </entry>
   
@@ -272,11 +272,11 @@
       <category term="PHP" scheme="http://uiste.github.io/categories/PHP/"/>
     
     
-      <category term="XAMPP" scheme="http://uiste.github.io/tags/XAMPP/"/>
+      <category term="MySQL" scheme="http://uiste.github.io/tags/MySQL/"/>
     
       <category term="PHP" scheme="http://uiste.github.io/tags/PHP/"/>
     
-      <category term="MySQL" scheme="http://uiste.github.io/tags/MySQL/"/>
+      <category term="XAMPP" scheme="http://uiste.github.io/tags/XAMPP/"/>
     
   </entry>
   
