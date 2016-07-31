@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://uiste.github.io/source/20160731-1.html</loc>
+    
+    <lastmod>2016-07-31T14:52:37.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://uiste.github.io/source/20160730-1.html</loc>
     
     <lastmod>2016-07-31T05:53:03.000Z</lastmod>
@@ -16,7 +23,7 @@
   </url>
   
   <url>
-    <loc>http://uiste.github.io/source/20160720-2.html</loc>
+    <loc>http://uiste.github.io/tags/index.html</loc>
     
     <lastmod>2016-07-26T15:20:35.000Z</lastmod>
     
@@ -30,21 +37,14 @@
   </url>
   
   <url>
-    <loc>http://uiste.github.io/source/20160723-4.html</loc>
+    <loc>http://uiste.github.io/source/20160724-5.html</loc>
     
     <lastmod>2016-07-26T15:20:35.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://uiste.github.io/tags/index.html</loc>
-    
-    <lastmod>2016-07-26T15:20:35.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://uiste.github.io/source/20160724-6.html</loc>
+    <loc>http://uiste.github.io/source/20160720-2.html</loc>
     
     <lastmod>2016-07-26T15:20:35.000Z</lastmod>
     
@@ -58,7 +58,7 @@
   </url>
   
   <url>
-    <loc>http://uiste.github.io/about/index.html</loc>
+    <loc>http://uiste.github.io/source/20160724-6.html</loc>
     
     <lastmod>2016-07-26T15:20:35.000Z</lastmod>
     
@@ -72,7 +72,14 @@
   </url>
   
   <url>
-    <loc>http://uiste.github.io/source/20160724-5.html</loc>
+    <loc>http://uiste.github.io/about/index.html</loc>
+    
+    <lastmod>2016-07-26T15:20:35.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://uiste.github.io/source/20160723-4.html</loc>
     
     <lastmod>2016-07-26T15:20:35.000Z</lastmod>
     
