@@ -513,6 +513,7 @@
 <h5 id="回到过去"><a href="#回到过去" class="headerlink" title="回到过去"></a>回到过去</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git log 		  //查看提交日志，找到对应记录的修改文件，复制commit 指针</div><div class="line">$ git reflog 	  //查询具体的版本号，最前面即为commit ID号</div><div class="line">$ git reset --hard 0ce6fd2	//恢复到以前版本</div></pre></td></tr></table></figure>
 <h5 id="建立里程碑"><a href="#建立里程碑" class="headerlink" title="建立里程碑"></a>建立里程碑</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt; 在github上打开项目首页</div><div class="line">&gt; release菜单-&gt;Draft a new release</div><div class="line">&gt; 版本号 @ Target:master -&gt;Write 记录项目信息</div><div class="line">&gt; Publish release 发布里程碑</div></pre></td></tr></table></figure>
 <h5 id="分支开发"><a href="#分支开发" class="headerlink" title="分支开发"></a>分支开发</h5><blockquote>
+<p>在github客户端操作<br>创建新分支：项目文件名 -&gt; Manage -&gt; 右侧Unpbulish -&gt; Branch 建立分支名为BUG<br>在新分支中：修改项目文件内容 -&gt; Commit to BUG 提交修改内容到BUG分支<br>合并分支内容：项目文件名 -&gt; Manage -&gt; BUG 移动到左侧Merge ，master移动到右侧Merge -&gt; 点击Merge</p>
 </blockquote>
           <div class="post-more-link text-center">
             <a class="btn" href="/source/20160731-2.html#more" rel="contents">
